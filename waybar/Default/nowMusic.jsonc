@@ -1,0 +1,14 @@
+{
+    "name": "nowMusic",
+    "mode": "overlay",
+    "position": "top",
+    "passthrough": false,
+    "style": "/home/tamettu_mushroom/.config/waybar/nowMusic.css", 
+
+    "modules-center": ["custom/youtube-status"],
+
+    "custom/youtube-status": {
+        "format": "{}",
+        "exec": "/home/tamettu_mushroom/MostRustTools/show_playing_music_app/target/release/show_playing_music_app"
+    }
+}

@@ -1,0 +1,45 @@
+{
+  "layer": "top",
+  "name": "defaultBase",
+  "position": "top",
+  "height": 10,
+  "style": "/home/tamettu_mushroom/.config/waybar/nowMusicIdle.css",
+  "modules-right": [
+    "clock",
+    "custom/power"
+  ],
+  "modules-center": [
+    "pulseaudio",
+    "custom/IDK",
+    "custom/bluetooth"
+  ],
+  "custom/bluetooth": {
+    "format": "",
+    "on-click": "exec blueman-manager"
+  },
+  "pulseaudio": {
+    "format": " {icon}  {volume}%",
+    "format-icons": [
+      "",
+      "",
+      ""
+    ],
+    "on-click": "pavucontrol",
+    "custom/volume-scroll": {
+      "on-scroll-up": "amixer -q sset Master 1%+",
+      "on-scroll-down": "amixer -q sset Master 1%-"
+    }
+  },
+  "custom/IDK": {
+    "format": "",
+    "on-click": "/home/tamettu_mushroom/MostRustTools/nowMusicChangeState/target/release/nowMusicChangeState"
+  },
+  "clock": {
+    "format": "{:%d %m %y | %H:%M:%S}",
+    "interval": 1
+  },
+  "custom/power": {
+    "format": "⏻",
+    "on-click": "/home/tamettu_mushroom/MostRustTools/COBar/target/release/COBar /home/tamettu_mushroom/.config/waybar/PowerButton/AllPower"
+  }
+}

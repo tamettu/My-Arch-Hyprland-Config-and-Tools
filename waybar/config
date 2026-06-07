@@ -1,0 +1,47 @@
+{
+    "layer": "top",
+    "exclusive": false,
+    "position": "right",
+    "height": 0,
+    "margin-top": 200,
+    "margin-bottom": 200,
+    "margin-right": 15,
+
+    "modules-left": ["custom/icon","hyprland/workspaces"],
+    "hyprland/workspaces":{
+        "disable-scroll": true,
+        "format": "●"
+    },
+    "custom/icon":{
+        "format": "󰟠",
+        "on-click": "wofi --show drun"
+    },
+
+
+    "modules-center":   ["custom/zen-browser","custom/discord","custom/steam","custom/unityhub"
+                        ,"custom/twitch","custom/pixelorama","custom/curseforge","custom/obs"],
+    "custom/zen-browser":{"format": "","on-click": "exec zen-browser"},
+    "custom/discord":{"format": "","on-click": "exec discord"},
+    "custom/steam":{"format": "","on-click": "exec steam"},
+    "custom/unityhub":{"format": "󰚯","on-click": "exec unityhub"},
+    "custom/twitch":{"format": "󰕃","on-click": "exec google-zen-browser-stable http://dashboard.twitch.tv/u/tamettu/stream-manager"},
+    "custom/pixelorama":{"format": "","on-click": "exec pixelorama"},
+    "custom/curseforge":{"format": "Cufo","on-click": "exec curseforge"},
+    "custom/obs": {"format": "OBS","on-click": "exec obs"},
+
+    "modules-right": ["custom/bluetooth", "pulseaudio", "clock"],
+    "custom/bluetooth": {
+        "format": "",
+        "on-click": "exec blueman-manager"
+    },
+    "pulseaudio": {
+        "format": " {icon} \n{volume}%",
+        "format-icons": ["", "", ""],
+        "on-click": "pavucontrol",
+        "custom/volume-scroll": {
+            "on-scroll-up": "amixer -q sset Master 1%+",
+            "on-scroll-down": "amixer -q sset Master 1%-"
+        }
+    },
+    "clock": {"format": "{:%H:%M\n%m,%d\n %a}"}
+}

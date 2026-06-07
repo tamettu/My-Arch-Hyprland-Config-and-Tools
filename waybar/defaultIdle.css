@@ -1,0 +1,24 @@
+window#waybar.defaultIdle {
+  font-family: "JetBrainsMono Nerd Font", "Font Awesome", sans-serif;
+  background-color: rgba(255, 242, 209, 1);
+
+}
+
+#custom-power,
+#custom-apps,
+#custom-info {
+  margin-left: 2px;
+  margin-right: 4px;
+  font-size: 7px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+#custom-power:hover,
+#custom-apps:hover,
+#custom-info:hover {
+  margin-left: 6px;
+  margin-right: 12px;
+  font-size: 20px;
+  color: rgba(82, 244, 217, 0.85);
+}

@@ -1,0 +1,28 @@
+window#waybar.defaultBase {
+  background-color: rgba(255, 242, 209, 0.5);
+  border-radius: 0px 0px 8px 8px;
+}
+
+#custom-IDK,
+#custom-power,
+#clock,
+#pulseaudio,
+#custom-bluetooth {
+  color: rgb(155, 155, 0);
+  padding: 0px 70px 0px 70px;
+  font-size: 10px;
+}
+
+#clock {
+  color: rgba(82, 244, 217, 0.6);
+}
+
+#custom-IDK:hover,
+#custom-power:hover,
+#clock:hover,
+#pulseaudio:hover,
+#custom-bluetooth:hover {
+  padding: 0px 65px 0px 65px;
+  color: rgb(82, 244, 217);
+  font-size: 25px;
+}

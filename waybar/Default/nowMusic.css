@@ -1,0 +1,14 @@
+window#waybar.nowMusic {
+  font-family: "Noto Sans CJK TC", "Source Han Sans TC", sans-serif;
+  background-color: transparent;
+}
+
+#custom-youtube-status {
+  color: rgb(82, 244, 217);
+  font-weight: bold;
+  font-size: 14px;
+  background-color: rgba(255, 242, 209, 0.5);
+  border: none;
+  padding: 6px 16px;
+  border-radius: 5px 5px 10px 10px;
+}

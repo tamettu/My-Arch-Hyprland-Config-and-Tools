@@ -1,0 +1,22 @@
+{
+  "name": "defaultIdle",
+  "style": "~/.config/waybar/defaultIdle.css",
+  "layer": "top",
+  "position": "right",
+ "modules-left": ["custom/power"], 
+  "modules-left": ["custom/power"],
+  "modules-center": ["custom/apps"],
+  "modules-right": ["custom/info"],
+  "custom/power":{
+    "format": "⏻",
+    "on-click": "/home/tamettu_mushroom/MostRustTools/defPowChangeState/target/release/defPowChangeState"
+  },
+  "custom/apps":{
+    "format": "",
+    "on-click": ""
+  },
+  "custom/info":{
+    "format": "󰸕",
+    "on-click": ""
+  }
+}

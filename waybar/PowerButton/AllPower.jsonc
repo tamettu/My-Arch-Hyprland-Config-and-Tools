@@ -1,0 +1,27 @@
+{
+  "name": "defaultPower",
+  "exclusive": false,
+  "passthrough": false,
+  "style": "/home/tamettu_mushroom/.config/waybar/defaultPower.css",
+  "position": "right",
+  "margin-right": 55,
+  "layer": "top",
+  "modules-left": [
+    "custom/POff",
+    "custom/reboot",
+    "custom/sleep",
+    "custom/lock"
+  ],
+  "custom/POff": {
+    "format": "󰚦",
+    "on-click": "poweroff"
+  },
+  "custom/reboot": {
+    "format": "",
+    "on-click": "reboot"
+  },
+  "custom/sleep": {
+    "format": "󰒲",
+    "on-click": "loginctl lock-session && systemctl suspend"
+  }
+}
